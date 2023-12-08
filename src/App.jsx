@@ -12,6 +12,9 @@ function App() {
   return (
     <>
     <Propseg text="hi this is main use of prop"/>
+    <Propseg text="hi this is main use of props"/>
+    <Propseg text="hi this is main use of propss"/>
+    
       <Indian/>
       <Currenttime/>
       <Today/>
