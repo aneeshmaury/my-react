@@ -1,25 +1,25 @@
-import { useState } from 'react'
-import Indian from './components/Indian'
-import Today from './components/Today'
-import Currenttime from './components/Currenttime'
-import Propseg from './components/propseg'
-import './App.css'
-
+import { useState } from 'react';
+import Indian from './components/Indian';
+import Today from './components/Today';
+import Currenttime from './components/Currenttime';
+import Propseg from './components/propseg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  let text = ["aneesh", "maury", "vikas", "maurya"];
 
   return (
     <>
-    <Propseg text="hi this is main use of prop"/>
-    <Propseg text="hi this is main use of props"/>
-    <Propseg text="hi this is main use of propss"/>
-    
-      <Indian/>
-      <Currenttime/>
-      <Today/>
+      {text.map((name, index) => (
+        <Propseg key={index} name={name} />
+      ))}
+      <Indian />
+      <Currenttime />
+      <Today />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
