@@ -12,13 +12,9 @@ function App() {
 
   return (
     <>
-      <h1>Food</h1>
-      <ul class="list-group">
-        {text.map((item)=>(
-          <li class="list-group-item">{item}</li>
+     {text.map((item)=>(
+          <Propseg text={item} key={item} />
         ))}
-
-      </ul>
       <Indian />
       <Currenttime />
       <Today />
