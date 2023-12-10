@@ -8,13 +8,14 @@ import './App.css';
 
 function App() {
   const [count, setCount] = useState(0);
-  let text = ["aneesh", "maury", "vikas", "maurya"];
+const name =["aneesh","pradeep","sankar","ankit"]
 
   return (
-    <>
-     {text.map((item)=>(
-          <Propseg text={item} key={item} />
-        ))}
+   
+  <>
+{name.map((item)=>(
+  <Propseg key={item} name={item}/>
+))}
       <Indian />
       <Currenttime />
       <Today />
