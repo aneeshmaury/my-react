@@ -4,7 +4,9 @@ import Today from './components/Today';
 import Currenttime from './components/Currenttime';
 import Propseg from './components/propseg';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import EventHand from './components/EventHendling';
 import './App.css';
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,6 +18,7 @@ const name =["aneesh","pradeep","sankar","ankit"]
 {name.map((item)=>(
   <Propseg key={item} name={item}/>
 ))}
+     <EventHand/>
       <Indian />
       <Currenttime />
       <Today />
