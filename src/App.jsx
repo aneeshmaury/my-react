@@ -4,7 +4,7 @@ import Today from './components/Today';
 import Currenttime from './components/Currenttime';
 import Propseg from './components/propseg';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import EventHand from './components/EventHendling';
+import EventHand from './components/EventHandling/UseState';
 import './App.css';
 
 
