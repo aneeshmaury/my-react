@@ -1,10 +1,14 @@
+import { useState } from "react";
+
 function EventHand(){
-    function result(){
-        alert("its work")
+     let [count,counting]=useState(0)
+    function press(){
+        counting(count+1);
     }
-    return <>
-        <h4>Hi, please click me</h4>
-        <button onClick={result}>Click me</button>
-    </>
+    return <button onClick={press}>
+    This is {count}
+
+    </button>
+    
 }
 export default EventHand;
